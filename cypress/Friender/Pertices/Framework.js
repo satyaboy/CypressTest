@@ -1,3 +1,5 @@
+/// <reference types="Cypress" />
+
 describe("Checking Framework",function()
 {
     before(function()
@@ -21,7 +23,13 @@ describe("Checking Framework",function()
 
          cy.get(':nth-child(2) > .nav-link').click()
          // Intilize the deytails in command.js
-         cy.SelectProduct('Blackberry')
-         cy.SelectProduct('Nokia Edge')
+
+         this.data.productName
+         this.data.productName.forEach(function(element)
+         {
+          cy.SelectProduct(element)
+         });
+        //  cy.SelectProduct('Blackberry')
+        //  cy.SelectProduct('Nokia Edge')
     })
 })  
