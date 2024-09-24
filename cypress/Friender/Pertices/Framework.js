@@ -22,5 +22,6 @@ describe("Checking Framework",function()
          cy.get(':nth-child(2) > .nav-link').click()
          // Intilize the deytails in command.js
          cy.SelectProduct('Blackberry')
+         cy.SelectProduct('Nokia Edge')
     })
 })  
