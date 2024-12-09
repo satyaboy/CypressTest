@@ -20,10 +20,9 @@ describe("Checking Framework",function()
 
          cy.get('input[name="name"]:nth-child(2)').should('have.attr','minlength','2')
          cy.get('#inlineRadio3').should('be.disabled')
-
+         cy.pause() // it will push your execution 
          cy.get(':nth-child(2) > .nav-link').click()
          // Intilize the deytails in command.js
-
          this.data.productName
          this.data.productName.forEach(function(element)
          {

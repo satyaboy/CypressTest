@@ -1,4 +1,6 @@
 {
+  "username":"rahulshettyacademy",
+  "password":"learning",
   "name": "S",
   "gender": "Male",
   "body": "Fixtures are a great way to mock data for responses to routes",
